@@ -13,6 +13,22 @@ Array.prototype.myMap = function(callback){
   return retArr;
 }
 
+Array.prototype.myReduce = function(callback2, initialValue){
+    let copyArr = this.slice(0,this.length);
+
+    if(!initialValue){
+      initialValue = copyArr.shift();
+    }
+
+    copyArr.myEach(function(el){ 
+      initialValue = callback2(initialValue, el) 
+    });
+    return initialValue;
+}
+
+function callback2(acc , el){
+  return acc + el;
+}
 
 
 function print_callback(num) {
