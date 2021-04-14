@@ -23,8 +23,6 @@ Array.prototype.twoSum = function() {
   return retArr;
 }
 
-// arr = [1,-1,4, 5, -4]
-// console.log(arr.twoSum());
 
 Array.prototype.transpose = function(){
   const retArr = [];
@@ -38,4 +36,6 @@ Array.prototype.transpose = function(){
   }
   return retArr;
 }
+
+
 
