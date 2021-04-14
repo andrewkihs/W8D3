@@ -25,3 +25,17 @@ Array.prototype.twoSum = function() {
 
 // arr = [1,-1,4, 5, -4]
 // console.log(arr.twoSum());
+
+Array.prototype.transpose = function(){
+  const retArr = [];
+
+  for(let i = 0; i < this.length; i++){
+    let subArr = [];
+    for(let j = 0; j < this[0].length; j++){
+      subArr.push(this[j][i]); 
+    }
+    retArr.push(subArr);
+  }
+  return retArr;
+}
+
